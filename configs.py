@@ -10,7 +10,7 @@ class Config(object):
 	BOT_USERNAME = os.environ.get("store_share_bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001878884616"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5183104181"))
-	DATABASE_URL = os.environ.get("https://t.me/+AJTwaWZGBaY1Njc1")
+	DATABASE_URL = os.environ.get("mongodb+srv://shok123:shok123@cluster0.yxyorfu.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001810000608")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
