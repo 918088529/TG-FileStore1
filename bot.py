@@ -1,4 +1,4 @@
-# (c) @TeleRoidGroup || @PredatorHackerzZ
+# (c) @Chart_122122_bot || @Chart_122122_bot
 
 import os
 import asyncio
