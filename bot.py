@@ -124,7 +124,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/TeleRoid14)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/Chart_122122_bot)",
                                      disable_web_page_preview=True)
             return
 
@@ -354,7 +354,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
+                        InlineKeyboardButton("BotsList Channel", url="https://t.me/Chart_122122_bot")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -362,8 +362,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Support Group", url="https://t.me/ideal_bot_father"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/Chart_122122_bot")
                     ]
                 ]
             )
@@ -371,7 +371,7 @@ async def button(bot: Client, cmd: CallbackQuery):
 
     elif "refreshForceSub" in cb_data:
         if Config.UPDATES_CHANNEL:
-            if Config.UPDATES_CHANNEL.startswith("-100"):
+            if Config.UPDATES_CHANNEL.startswith("-1001810000608"):
                 channel_chat_id = int(Config.UPDATES_CHANNEL)
             else:
                 channel_chat_id = Config.UPDATES_CHANNEL
@@ -379,7 +379,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/Chart_122122_bot).",
                         disable_web_page_preview=True
                     )
                     return
@@ -401,7 +401,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/Chart_122122_bot).",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,8 +411,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Support Group", url="https://t.me/Chart_122122_bot"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/ideal_bot_father")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
